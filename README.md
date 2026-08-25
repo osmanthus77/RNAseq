@@ -2,6 +2,8 @@
 
 根据[参考流程](https://github.com/eternal-bug/RNA)改写为snakemake
 
+[SraRunTable.csv](SraRunTable.csv)下载自ncbi sra，筛选sra、genotype、librarylayout、samplename、treatment到[group.tsv](group.tsv)
+
 ```shell
 #下载pipeline
 git clone
