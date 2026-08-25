@@ -1,6 +1,11 @@
 ref
 logs
 dag.png
-0*
+01_rawfastq
+02_fastqc
+03_trim
+04_sortmerna
+05_align
+06_HTseq
 .snakemake
 .DS_Store
