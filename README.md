@@ -6,12 +6,12 @@
 
 ```shell
 #下载pipeline
-git clone
-cd 
+git clone https://github.com/osmanthus77/RNAseq.git
+cd RNAseq
 
 # 安装环境
 conda env create --file envs/envs.yaml
-conda activate --stack RNAseq
+conda activate --stack RNAseq_rat
 
 # 下载ref
 bash ref_download.sh
