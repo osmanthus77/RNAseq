@@ -1,0 +1,32 @@
+inputfile:
+  groupfile: "group.tsv"
+
+download:
+  retry: 3
+  extract_threads: 4
+  
+fastqc:
+  threads: 4
+
+cutadapt:
+  min_length: 30
+  adapter: "AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+  overlap: 4
+
+trimmomatic:
+  params: "LEADING:20 TRAILING:20 SLIDINGWINDOW:5:15 MINLEN:30"
+
+sortmerna:
+  ref: "/Users/yakamozchan/database/sortmerna_db/rRNA_databases/smr_v4.3_default_db.fasta"
+  threads: 4
+  step: "yes"
+
+hisat2:
+  index: "ref/index/GRCr8.chr1"
+  threads: 4
+
+HTseq:
+  threads: 4
+  gff: "ref/GRCr8.gff3"
+  gtf: "ref/GRCr8.gtf"
+  params: "--order pos -s no"

@@ -3,3 +3,4 @@ logs
 dag.png
 0*
 .snakemake
+.DS_Store
